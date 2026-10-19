@@ -90,12 +90,29 @@ a {
   margin-bottom: 20px;
 }
 
+
 .hero h1 {
   max-width: 850px;
   font-size: clamp(36px, 6vw, 70px);
   line-height: 1.15;
   animation: aparecer 5s ease-in-out infinite;
-  animation-delay: 120s;
+}
+
+@keyframes aparecer {
+  0%, 95% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  97% {
+    opacity: 0;
+    transform: translateY(15px);
+  } 
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-description,
